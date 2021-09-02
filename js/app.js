@@ -5,7 +5,7 @@ const loadBooks = () => {
     // clearing search input field after clicking search
     searchField.value = '';
 
-    const url = `http://openlibrary.org/search.json?q=${searchText}`;
+    const url = `https://openlibrary.org/search.json?q=${searchText}`;
     fetch(url)
         .then(res => res.json())
         .then(data => displayBooks(data));
