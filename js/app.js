@@ -1,5 +1,10 @@
+// spinner 
+const spinnerDisplay = displayStyle => {
+    document.getElementById('spinner').style.display = displayStyle;
+}
 // function to load books on search
 const loadBooks = () => {
+    spinnerDisplay('block');
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
     // clearing search input field after clicking search
@@ -13,6 +18,7 @@ const loadBooks = () => {
 
 // function to display search results 
 const displayBooks = data => {
+
     // adding backgroundColor to the result container 
     document.getElementById('result-section').style.backgroundColor = 'rgb(245,245,245)';
 
@@ -54,6 +60,9 @@ const displayBooks = data => {
         </div>
         `;
         resultContainer.appendChild(newItem);
+        spinnerDisplay('none');
+
     });
 
 }
+

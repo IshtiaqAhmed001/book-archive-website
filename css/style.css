@@ -1,5 +1,9 @@
+/*container background styles  */
 .search-result{
-    /* background-color:rgb(245,245,245); */
     padding: 10px 40px;
     border-radius: 5px;
+}
+/* spinner default display style  */
+#spinner{
+    display: none;
 }
