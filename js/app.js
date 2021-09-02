@@ -13,7 +13,7 @@ const loadBooks = () => {
 
 // function to display search results 
 const displayBooks = data => {
-    console.log(data);
+
     const resultCount = document.getElementById('total-result-found');
 
     // show search result count
