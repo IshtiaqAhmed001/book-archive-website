@@ -25,23 +25,26 @@ const displayBooks = data => {
     const resultContainer = document.getElementById('result-container');
     // clearing previous search results 
     resultContainer.textContent = '';
+
     // slicing the array for showing 50 items in result
     const books = data.docs.slice(0, 50);
+
     books.forEach(book => {
-        // console.log(book);
         const newItem = document.createElement('div');
         newItem.classList.add('col');
+
+        // dynamic url for book cover image 
         const imageUrl = `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
+
         newItem.innerHTML = `
-        <div class="card">
-            <img src="${imageUrl}" class="card-img-top" alt="...">
+        <div class="card h-100">
+            <img src="${imageUrl}" class="card-img-top" width="200" height="400" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${book.title}</h5>
                 <p class="card-text">
                 <h6>Author Name:${book.author_name}</h6>
                 <h6>Publisher:${book.publisher}</h6>
                 <h6>First Publish year:${book.first_publish_year}</h6>
-
                 </p>
             </div>
         </div>
