@@ -60,9 +60,8 @@ const displayBooks = data => {
         </div>
         `;
         resultContainer.appendChild(newItem);
-        spinnerDisplay('none');
-
     });
+    spinnerDisplay('none');
 
 }
 
