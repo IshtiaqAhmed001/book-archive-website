@@ -52,9 +52,9 @@ const displayBooks = data => {
             <div class="card-body">
                 <h5 class="card-title">${book.title}</h5>
                 <p class="card-text">
-                <h6>Author Name: ${book.author_name}</h6>
-                <h6>Publisher: ${book.publisher}</h6>
-                <h6>First Publish year: ${book.first_publish_year}</h6>
+                <h6>Author Name: <span class=fw-light> ${book.author_name}</span></h6>
+                <h6>Publisher: <span class=fw-light> ${book.publisher}</span></h6>
+                <h6>First Publish year: <span class=fw-light> ${book.first_publish_year}</span></h6>
                 </p>
             </div>
         </div>
