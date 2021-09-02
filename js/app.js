@@ -1,7 +1,8 @@
-// load books on search
+// function to load books on search
 const loadBooks = () => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
+    // clearing search input field after clicking search
     searchField.value = '';
 
     const url = `http://openlibrary.org/search.json?q=${searchText}`;
@@ -10,6 +11,7 @@ const loadBooks = () => {
         .then(data => displayBooks(data));
 }
 
+// function to display search results 
 const displayBooks = data => {
     console.log(data);
     const resultCount = document.getElementById('total-result-found');
@@ -38,18 +40,18 @@ const displayBooks = data => {
 
         newItem.innerHTML = `
         <div class="card h-100">
-            <img src="${imageUrl}" class="card-img-top" width="200" height="400" alt="...">
+            <img src="${imageUrl}" class="card-img-top" width="80" height="200" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${book.title}</h5>
                 <p class="card-text">
-                <h6>Author Name:${book.author_name}</h6>
-                <h6>Publisher:${book.publisher}</h6>
-                <h6>First Publish year:${book.first_publish_year}</h6>
+                <h6>Author Name: ${book.author_name}</h6>
+                <h6>Publisher: ${book.publisher}</h6>
+                <h6>First Publish year: ${book.first_publish_year}</h6>
                 </p>
             </div>
         </div>
         `;
         resultContainer.appendChild(newItem);
-    })
+    });
 
 }

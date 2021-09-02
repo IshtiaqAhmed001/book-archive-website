@@ -12,12 +12,13 @@
 </head>
 
 <body>
+    <!-- header  -->
     <header>
         <h2 class="text-center text-success my-3">Welcome to the largest book archive</h2>
     </header>
     <main>
-        <section class="container search-section">
-            <!-- search section  -->
+        <!--Book search section  -->
+        <section class="container">
             <div class="input-group mb-3 mx-auto w-75">
                 <input id="search-field" type="text" class="form-control" placeholder="Book name to search"
                     aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -27,25 +28,15 @@
                     id="search-button">Search</button>
             </div>
         </section>
-        <!-- result container  -->
+        <!-- Search result container  -->
         <section class="container search-result">
-            <!-- search result count  -->
+            <!-- display search result count  -->
             <h6 class="mb-3 fw-light" id="total-result-found"></h6>
-            <div id="result-container" class="row row-cols-1 row-cols-md-3 g-4">
-                <!-- <div class="col">
-                    <div class="card">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div> -->
+            <div id="result-container" class="row row-cols-1 row-cols-md-4 g-4">
+
             </div>
         </section>
     </main>
-
 
 
     <!-- bootstrap script  -->
