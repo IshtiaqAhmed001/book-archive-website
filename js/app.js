@@ -13,6 +13,8 @@ const loadBooks = () => {
 
 // function to display search results 
 const displayBooks = data => {
+    // adding backgroundColor to the result container 
+    document.getElementById('result-section').style.backgroundColor = 'rgb(245,245,245)';
 
     const resultCount = document.getElementById('total-result-found');
 

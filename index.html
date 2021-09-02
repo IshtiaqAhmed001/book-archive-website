@@ -9,12 +9,14 @@
     <!-- bootstrap css  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- my stylesheet  -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- header  -->
     <header>
-        <h2 class="text-center text-success my-3">Welcome to the largest book archive</h2>
+        <h2 class="text-center text-success page-title my-3">Welcome to the largest book archive</h2>
     </header>
     <main>
         <!--Book search section  -->
@@ -29,9 +31,9 @@
             </div>
         </section>
         <!-- Search result container  -->
-        <section class="container search-result">
+        <section id="result-section" class="container search-result">
             <!-- display search result count  -->
-            <h6 class="mb-3 fw-light" id="total-result-found"></h6>
+            <h6 class="mb-3 fw-light pb-2" id="total-result-found"></h6>
             <div id="result-container" class="row row-cols-1 row-cols-md-4 g-4">
 
             </div>
